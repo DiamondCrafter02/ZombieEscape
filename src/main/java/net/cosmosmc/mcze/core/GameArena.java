@@ -146,5 +146,14 @@ public class GameArena {
 
         // run later, reset game state to waiting
     }
+    @Override
+    public void join(PlayerJoinEvent e){
+        if(gameState = GameState.RESTRICTED;){
+            //TODO Permission so if player is not rank kick them
+            Player player = (Player) e.getPlayer();
+            player.setGamemode(GameMode.SPECTATOR);
+            //TODO Game alredy started message
+        }
+    }
 
 }
